@@ -6,6 +6,8 @@
 			$this->conexion = new mysqli(SERVIDORBD, USUARIO, PASSWORD, BASEDATOS);
 		}
 
+		//Consulta preparada con IMSERT
+
 		// function consultaPreparada($sql){
 		//
 		// 	$stmt = $this->conexion->prepare($sql);
@@ -26,6 +28,8 @@
 		//
 		// 	$stmt->close();
 		// }
+
+		//Consulta preparada con SELECT y get_result
 
 		function consultar($sql){
 

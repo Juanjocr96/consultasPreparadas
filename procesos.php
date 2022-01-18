@@ -9,5 +9,8 @@
     function consulta(){
 			$sql = "SELECT * FROM minijuego WHERE idMinijuego = ?";
 			$this->conexion->consultar($sql);
+
+			// $sql = "INSERT INTO minijuego (idMinijuego, nombre, url) VALUES (?, ?, ?)";
+			// $this->conexion->consultaPreparada($sql)
 	}
 }
