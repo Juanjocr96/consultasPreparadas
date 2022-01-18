@@ -6,20 +6,20 @@
     <title></title>
   </head>
   <body>
-    <h1>Guardar Puntuación</h1>
+    <h1>Consultas preparadas</h1>
     <form method="POST">
       <div>
-        <p>Ejemplo de consultas preparadas</p>
+        <p>Ejemplo de get_result</p>
       </div>
-      <input type="submit" name="guardar" value="Guardar">
+      <input type="submit" name="consulta" value="Consultar">
     </form>
     <?php
 			include_once 'procesos.php';
 
 			$procesos = new Procesos;
 
-			if(isset($_POST["guardar"])){
-        $procesos->alta();
+			if(isset($_POST["consulta"])){
+        $procesos->consulta();
       }
 		?>
   </body>
